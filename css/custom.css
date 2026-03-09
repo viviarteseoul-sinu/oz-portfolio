@@ -1,0 +1,38 @@
+body{
+font-family:'Pretendard',sans-serif;
+background:#ffe4ec;
+}
+
+.hero{
+background:#ffc2d1;
+padding:80px 0;
+}
+
+.card{
+border:none;
+border-radius:20px;
+transition:all 0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-text{
+line-height:2;
+font-size:1.1rem;
+max-width:700px;
+margin:auto;
+}
+
+.btn-primary{
+background:#ff6b9a;
+border:none;
+border-radius:30px;
+padding:10px 25px;
+}
+
+.btn-primary:hover{
+background:#ff4d84;
+}
