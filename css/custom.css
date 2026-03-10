@@ -74,4 +74,8 @@ padding:120px 0;
   transform:scale(1.08);
 }
 
+.brand-name{
+  font-size:2rem;
+  display:block;
+  margin-bottom:40px;
 }
