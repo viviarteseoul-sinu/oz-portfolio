@@ -26,16 +26,12 @@ padding:180px 0 120px;
 
 
 
-.hero-logo{
-
-
-
-width:420px;
-
-max-width:90%;
-
-
-
+.hero-logo {
+    width: 420px;       /* PC에서의 기본 크기 */
+    max-width: 80%;     /* 모바일 등 작은 화면에서 화면 너비의 80%를 넘지 않음 */
+    height: auto;       /* 비율 유지 */
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -88,14 +84,12 @@ box-shadow:0 20px 40px rgba(0,0,0,0.08);
 
 
 
-.emblem{
-
-
-
-width:200px;
-
-
-
+.emblem {
+    width: 120px;       /* PC에서의 기본 크기 (기존 200px에서 조금 더 간결하게 조정) */
+    max-width: 40%;     /* 모바일에서 화면 너비의 40%를 넘지 않음 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -173,16 +167,22 @@ margin-bottom: 20px; /* 아래쪽 간격 */
 /* 모바일 대응 (화면이 작아지면 1열로) */
 
 @media (max-width: 768px) {
+    .hero {
+        padding: 120px 0 60px; /* 모바일에서는 위아래 여백을 조금 줄임 */
+    }
+    
+    .hero-logo {
+        width: 280px; /* 모바일에서 적당한 크기로 고정 */
+    }
+    
+    .emblem {
+        width: 80px; /* 모바일에서 엠블럼 크기 축소 */
+    }
 
-#gallery .row {
-
-column-count: 1;
-
+    .brand-name {
+        font-size: 1.5rem; /* 모바일에서 텍스트 크기 조절 */
+    }
 }
-
-}
-
-
 
 .brand-name{
 
