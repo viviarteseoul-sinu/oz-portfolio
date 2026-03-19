@@ -296,24 +296,49 @@
 
 <!-- CTA -->
 
-</section>
-
 <section class="cta text-center py-5 bg-dark text-white">
     <div class="container py-4">
         <h2 class="mb-4">지금 바로 상담해보세요</h2>
-        <a href="#" class="btn btn-outline-light btn-lg px-5 rounded-pill">예약 문의</a>
+        <button type="button" class="btn btn-outline-light btn-lg px-5 rounded-pill" data-bs-toggle="modal" data-bs-target="#contactModal">
+            예약 문의하기
+        </button>
     </div>
 </section>
-</section>
 
-<br>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark" style="border-radius: 20px;">
+            <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="contactModalLabel">상담 방법을 선택해주세요</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="d-grid gap-3">
+                    <a href="http://pf.kakao.com/_xaxfnHxj" target="_blank" class="btn btn-dark btn-lg py-3 rounded-pill shadow-sm">
+                        <i class="bi bi-chat-fill me-2"></i> 카카오톡으로 문의
+                    </a>
+                    <a href="tel:010-4836-6321" class="btn btn-dark btn-lg py-3 rounded-pill shadow-sm">
+                        <i class="bi bi-telephone-fill me-2"></i> 전화로 바로 상담하기
+                    </a>
+                    <a href="https://www.instagram.com/viviarte_seoul" target="_blank" class="btn btn-dark btn-lg py-3 rounded-pill shadow-sm">
+                        <i class="bi bi-instagram me-2"></i> 인스타그램 DM 문의
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-sm text-secondary w-100" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- FOOTER -->
 
-<footer class="text-center py-5">
-
-<p>© 2023 Viviarte Seoul</p>
-
+<footer class="text-center py-5 bg-light">
+    <div class="container">
+        <div class="mb-4">
+        <p class="text-muted small">© 2023 Viviarte Seoul. All Rights Reserved.</p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

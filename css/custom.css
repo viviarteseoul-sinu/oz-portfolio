@@ -256,3 +256,33 @@ top: 4px;
 box-shadow: 0 0 0 #000000;
 
 }
+
+/* 기존 보내주신 스타일 하단에 추가하세요 */
+
+.modal-content {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* 모달 내 모든 버튼을 블랙으로 통일 */
+.modal-body .btn-dark {
+    background-color: #1d1d1f; /* 애플 스타일 블랙 */
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* 버튼에 마우스 올렸을 때 효과 */
+.modal-body .btn-dark:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 아이콘 크기 살짝 조정 */
+.modal-body i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
